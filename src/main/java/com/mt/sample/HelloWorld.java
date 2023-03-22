@@ -1,38 +1,22 @@
-package com.mt.sample.test;
-
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+package com.mt.sample;
 
 /**
- * Unit test for HelloWorld.
+ * Hello world!
+ *
  */
-public class HelloWorldTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public HelloWorldTest( String testName )
-    {
-        super( testName );
-    }
+import java.util.Date;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( HelloWorldTest.class );
-    }
+public class HelloWorld {
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	public static void main(String[] args) {
+		System.out.println("Hello Engineers, Welcome to Fortress-Technologies DevOps Master Class. You are sudying Maven Build Tool. !! Today Date is:  " + getLocalCurrentDate());
+
+	}
+
+	private static Date getLocalCurrentDate() {
+		String m = "Fortress-Technologies";
+		return new Date();
+
+	}
+
 }
